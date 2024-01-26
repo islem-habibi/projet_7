@@ -35,7 +35,7 @@ api_url = "http://127.0.0.1:8000/predict_proba"
 st.title("Dashboard interactif pour la prédiction de crédit")
 df=pd.read_csv('training_data.csv')
 
-st.header("prediction d'un resultat sur mesure")
+st.header("Estimation pour les Nouveaux clients")
 
 date=st.date_input("today's date", format="DD.MM.YYYY" )
 
@@ -96,7 +96,7 @@ provided_flag_documents= st.number_input("How many flag document did client prov
 AMT_REQ_CREDIT_BUREAU_SUM= st.number_input("Total enquiries number to Credit Bureau about the client ", min_value=0, value='min', step=1)
 
 
-predict_btn=st.button('Prédire un nouveau résultat')
+predict_btn=st.button('Nouveau résultat')
 if predict_btn:
     input_data = {
         'NAME_CONTRACT_TYPE': NAME_CONTRACT_TYPE,
@@ -157,12 +157,12 @@ if predict_btn:
 
 with st.sidebar: #avec des données test deja traitées
 
-    st.subheader("prediction d'un resultat de la base de données")
+    st.subheader("Estimation pour les clients déja inscrits")
 
     # Saisie de l'identifiant de crédit
     ID = st.text_input("Identifiant de crédit: tester avec 208550 et 144092")
     # use id 208550 for test
-    if st.button("Prédire le résultat"):
+    if st.button("Résultat"):
         if int(ID) in test_df['SK_ID_CURR'].values:
             # Sélectionner la ligne correspondant à l'identifiant fourni
             case = test_df.loc[test_df['SK_ID_CURR'] == int(ID), test_df.drop(columns=['SK_ID_CURR']).columns]
