@@ -1,3 +1,4 @@
+pip install shap
 import shap
 import mlflow
 import mlflow.sklearn
