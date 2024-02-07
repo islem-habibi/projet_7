@@ -11,3 +11,6 @@ _**Objectifs élemntaires**_:
 * Développement d'un tableau de bord interactif destiné aux gestionnaires de la relation client à l'aide de Streamlit.
 * Déploiement du modèle via une API sur le Web pour une accessibilité optimale.
 * Utilisation de Git et GitHub pour le versioning du code, assurant une gestion efficace des modifications et des collaborations.
+
+  L'API est disponible sur : https://p7-api-40a72eb22034.herokuapp.com/
+  Le dashboard est disponible sur: https://p7-dashboard-aef5610371fe.herokuapp.com/
