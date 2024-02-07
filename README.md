@@ -12,11 +12,8 @@ _**Objectifs élemntaires**_:
 * Déploiement du modèle via une API sur le Web pour une accessibilité optimale.
 * Utilisation de Git et GitHub pour le versioning du code, assurant une gestion efficace des modifications et des collaborations.
 
-<<<<<<< HEAD
-  L'API est disponible sur : https://p7-api-40a72eb22034.herokuapp.com/
-  Le dashboard est disponible sur: https://p7-dashboard-aef5610371fe.herokuapp.com/
-=======
+
 L'API est disponible sur : https://p7-api-40a72eb22034.herokuapp.com/
-  
+
 Le dashboard est disponible sur: https://p7-dashboard-aef5610371fe.herokuapp.com/
->>>>>>> d0660842a754e56cb4ca76cbbb71d21d54fbbfca
+
